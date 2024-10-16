@@ -1,0 +1,866 @@
+@import './components/sassModules/font';
+@import './components/sassModules/mixin';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $bricolageFont;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+
+    .nav{
+        position: fixed;
+        width: 100%;
+        z-index: 888;
+        left: 0;
+        top: 0;
+        padding: 10px 1rem;
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .navbarlogo{
+                h1{
+                    font-size: 1rem;
+                    font-style: italic;
+                }
+            }
+
+            .navbarlinks{
+                display: flex;
+                gap: 10px;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 5px 10px;
+                    border: 1px solid black;
+                    border-radius: 20px;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .ho{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5rem 0 2rem 0;
+
+        .hoheader{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            h1{
+                @include dekstopheader;
+            }
+        }
+
+        .hoparagraph{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+
+            span{
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 15px;
+                font-weight: 200;
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
+
+    .pro{
+        padding: 4rem 1rem;
+
+        .proheader{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span{
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 2rem;
+            }
+
+            h1{
+                @include dekstopheader;
+            }
+
+            .recent{
+                padding-right: 30rem;
+            }
+        }
+
+        .progrid{
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
+            .probox{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .proboxspan{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 10px;
+
+                    h4{
+                        font-weight: 300;
+                        font-size: 15px;
+                    }
+
+                    i{
+                        transform: rotate(-230deg);
+                    }
+                }
+
+                .brand img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .propanelex{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h4{
+                        font-weight: 300;
+                        font-size: 15px;
+                    }
+
+                    span{
+                        font-weight: bold;
+                    }
+
+                    .propanelexlink{
+                        display: flex;
+                        gap: 10px;
+
+                        a{
+                            padding: 10px;
+                            color: black;
+                            transition: .2s ease-in-out;
+
+                            &:hover{
+                                background-color: rgb(236, 236, 236);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .fo{
+        border-top: 1px solid black;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .fospan{
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+
+            p{
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+        .foheader{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                text-align: center;
+                font-family: $chivoFont;
+                font-weight: bold;
+                font-style: italic;
+                line-height: 0.7;
+                font-size: 8rem;
+                letter-spacing: -10px;
+            }
+
+            .foheaderpanel{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                p{
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    a{
+                        color: black;
+                        padding: 3px 5px;
+                        transition: .2s ease-in-out;
+                        border-radius: 2px;
+
+                        &:hover{
+                            background-color: rgb(236, 236, 236);
+                        }
+                    }
+                }
+            }
+        }
+
+        .fotable{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-top: 3rem;
+
+            .foleft{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+
+                .foleftlink{
+                    display: flex;
+                    gap: 10px;
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        transition: .2s ease-in-out;
+                        font-size: 15px;
+                        font-weight: 300;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .foright{
+                p{
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px){
+    .container{
+
+        .nav{
+            position: fixed;
+            width: 100%;
+            z-index: 888;
+            left: 0;
+            top: 0;
+            padding: 10px 1rem;
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .navbarlogo{
+                    h1{
+                        font-size: 1rem;
+                        font-style: italic;
+                    }
+                }
+
+                .navbarlinks{
+                    display: flex;
+                    gap: 10px;
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        padding: 5px 10px;
+                        border: 1px solid black;
+                        border-radius: 20px;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ho{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5rem 0 2rem 0;
+
+            .hoheader{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin-top: 8rem;
+
+                img{
+                    position: absolute;
+                    top: 14rem;
+                    left: 10rem;
+                }
+
+                h1{
+                    @include tabletheader;
+                }
+            }
+
+            .hoparagraph{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+
+                span{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size: 15px;
+                    font-weight: 200;
+                    width: 80%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .pro{
+            padding: 4rem 1rem;
+
+            .proheader{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                span{
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin-bottom: 2rem;
+                }
+
+                h1{
+                    @include tabletheader;
+                }
+
+                .recent{
+                    padding-right: 10rem;
+                }
+            }
+
+            .progrid{
+                margin-top: 2rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+
+                .probox{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .proboxspan{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-bottom: 10px;
+
+                        h4{
+                            font-weight: 300;
+                            font-size: 13px;
+                        }
+
+                        i{
+                            transform: rotate(-230deg);
+                        }
+                    }
+
+                    .brand img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .propanelex{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h4{
+                            font-weight: 300;
+                            font-size: 13px;
+                        }
+
+                        span{
+                            font-weight: bold;
+                        }
+
+                        .propanelexlink{
+                            display: flex;
+                            gap: 10px;
+
+                            a{
+                                padding: 10px;
+                                color: black;
+                                transition: .2s ease-in-out;
+
+                                &:hover{
+                                    background-color: rgb(236, 236, 236);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .fo{
+            border-top: 1px solid black;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .fospan{
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+
+                p{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+
+            .foheader{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1{
+                    text-align: center;
+                    font-family: $chivoFont;
+                    font-weight: bold;
+                    font-style: italic;
+                    line-height: 0.7;
+                    font-size: 8rem;
+                    letter-spacing: -10px;
+                }
+
+                .foheaderpanel{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+
+                    h1{
+                        line-height: 0.8;
+                    }
+
+                    p{
+                        padding: 10px;
+                        border: 1px solid black;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        font-size: 13px;
+
+                        a{
+                            color: black;
+                            padding: 3px 5px;
+                            transition: .2s ease-in-out;
+                            border-radius: 2px;
+
+                            &:hover{
+                                background-color: rgb(236, 236, 236);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .fotable{
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                margin-top: 3rem;
+
+                .foleft{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h2{
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+
+                    .foleftlink{
+                        display: flex;
+                        gap: 10px;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            transition: .2s ease-in-out;
+                            font-size: 13px;
+                            font-weight: 300;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .foright{
+                    p{
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 660px){
+    .container{
+
+        .nav{
+            position: fixed;
+            width: 100%;
+            z-index: 888;
+            left: 0;
+            top: 0;
+            padding: 10px 1rem;
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .navbarlogo{
+                    h1{
+                        font-size: 1rem;
+                        font-style: italic;
+                    }
+                }
+
+                .navbarlinks{
+                    display: flex;
+                    gap: 10px;
+
+                    a{
+                        text-decoration: none;
+                        font-size: 13px;
+                        color: black;
+                        padding: 5px 10px;
+                        border: 1px solid black;
+                        border-radius: 20px;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ho{
+            height: 100svh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5rem 0 2rem 0;
+
+            .hoheader{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin-top: 2rem;
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    width: 5rem;
+                    left: 0;
+                }
+
+                h1{
+                    @include mobileheader;
+                }
+            }
+
+            .hoparagraph{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+
+                span{
+                    font-size: $tabletspan;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size: $tabletspan;
+                    font-weight: 200;
+                    width: 80%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .pro{
+            padding: 4rem 1rem;
+
+            .proheader{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                span{
+                    font-size: $tabletspan;
+                    font-weight: 600;
+                    margin-bottom: 2rem;
+                }
+
+                h1{
+                    @include mobileheader;
+                }
+
+                .recent{
+                    padding-right: 5rem;
+                }
+            }
+
+            .progrid{
+                margin-top: 2rem;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2rem;
+
+                .probox{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+
+                    .proboxspan{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-bottom: 10px;
+
+                        h4{
+                            font-weight: 300;
+                            font-size: 13px;
+                        }
+
+                        i{
+                            transform: rotate(-230deg);
+                        }
+                    }
+
+                    .brand img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .propanelex{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h4{
+                            font-weight: 300;
+                            font-size: 13px;
+                        }
+
+                        span{
+                            font-weight: bold;
+                        }
+
+                        .propanelexlink{
+                            display: flex;
+                            gap: 10px;
+
+                            a{
+                                padding: 10px;
+                                color: black;
+                                transition: .2s ease-in-out;
+
+                                &:hover{
+                                    background-color: rgb(236, 236, 236);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .fo{
+            border-top: 1px solid black;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .fospan{
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+
+                p{
+                    font-size: $tabletspan;
+                    font-weight: 600;
+                }
+            }
+
+            .foheader{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1{
+                    @include mobileheader;
+                }
+
+                .foheaderpanel{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+
+                    h1{
+                        line-height: 0.8;
+                    }
+
+                    p{
+                        padding: 10px;
+                        border: 1px solid black;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        font-size: 13px;
+
+                        a{
+                            color: black;
+                            padding: 3px 5px;
+                            transition: .2s ease-in-out;
+                            border-radius: 2px;
+
+                            &:hover{
+                                background-color: rgb(236, 236, 236);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .fotable{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-top: 3rem;
+                gap: 3rem;
+
+                .foleft{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    h2{
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+
+                    .foleftlink{
+                        display: flex;
+                        gap: 10px;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            transition: .2s ease-in-out;
+                            font-size: 13px;
+                            font-weight: 300;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .foright{
+                    p{
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

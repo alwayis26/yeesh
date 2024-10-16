@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container .nav {
+  position: fixed;
+  width: 100%;
+  z-index: 888;
+  left: 0;
+  top: 0;
+  padding: 10px 1rem;
+}
+.container .nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .nav .navbar .navbarlogo h1 {
+  font-size: 1rem;
+  font-style: italic;
+}
+.container .nav .navbar .navbarlinks {
+  display: flex;
+  gap: 10px;
+}
+.container .nav .navbar .navbarlinks a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.container .nav .navbar .navbarlinks a:hover {
+  text-decoration: underline;
+}
+.container .ho {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0 2rem 0;
+}
+.container .ho .hoheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .ho .hoheader img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .ho .hoheader h1 {
+  text-align: center;
+  font-family: "Chivo", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 0.7;
+  font-size: 12rem;
+  letter-spacing: -25px;
+}
+.container .ho .hoparagraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.container .ho .hoparagraph span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.container .ho .hoparagraph p {
+  font-size: 15px;
+  font-weight: 200;
+  width: 50%;
+  text-align: center;
+}
+.container .pro {
+  padding: 4rem 1rem;
+}
+.container .pro .proheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .pro .proheader span {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.container .pro .proheader h1 {
+  text-align: center;
+  font-family: "Chivo", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 0.7;
+  font-size: 12rem;
+  letter-spacing: -25px;
+}
+.container .pro .proheader .recent {
+  padding-right: 30rem;
+}
+.container .pro .progrid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.container .pro .progrid .probox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.container .pro .progrid .probox .proboxspan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.container .pro .progrid .probox .proboxspan h4 {
+  font-weight: 300;
+  font-size: 15px;
+}
+.container .pro .progrid .probox .proboxspan i {
+  transform: rotate(-230deg);
+}
+.container .pro .progrid .probox .brand img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .pro .progrid .probox .propanelex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .pro .progrid .probox .propanelex h4 {
+  font-weight: 300;
+  font-size: 15px;
+}
+.container .pro .progrid .probox .propanelex span {
+  font-weight: bold;
+}
+.container .pro .progrid .probox .propanelex .propanelexlink {
+  display: flex;
+  gap: 10px;
+}
+.container .pro .progrid .probox .propanelex .propanelexlink a {
+  padding: 10px;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+.container .pro .progrid .probox .propanelex .propanelexlink a:hover {
+  background-color: rgb(236, 236, 236);
+}
+.container .fo {
+  border-top: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container .fo .fospan {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.container .fo .fospan p {
+  font-size: 15px;
+  font-weight: 600;
+}
+.container .fo .foheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .fo .foheader h1 {
+  text-align: center;
+  font-family: "Chivo", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 0.7;
+  font-size: 8rem;
+  letter-spacing: -10px;
+}
+.container .fo .foheader .foheaderpanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.container .fo .foheader .foheaderpanel p {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .fo .foheader .foheaderpanel p a {
+  color: black;
+  padding: 3px 5px;
+  transition: 0.2s ease-in-out;
+  border-radius: 2px;
+}
+.container .fo .foheader .foheaderpanel p a:hover {
+  background-color: rgb(236, 236, 236);
+}
+.container .fo .fotable {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 3rem;
+}
+.container .fo .fotable .foleft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .fo .fotable .foleft h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.container .fo .fotable .foleft .foleftlink {
+  display: flex;
+  gap: 10px;
+}
+.container .fo .fotable .foleft .foleftlink a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in-out;
+  font-size: 15px;
+  font-weight: 300;
+}
+.container .fo .fotable .foleft .foleftlink a:hover {
+  text-decoration: underline;
+}
+.container .fo .fotable .foright p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 860px) {
+  .container .nav {
+    position: fixed;
+    width: 100%;
+    z-index: 888;
+    left: 0;
+    top: 0;
+    padding: 10px 1rem;
+  }
+  .container .nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .nav .navbar .navbarlogo h1 {
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .container .nav .navbar .navbarlinks {
+    display: flex;
+    gap: 10px;
+  }
+  .container .nav .navbar .navbarlinks a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  .container .nav .navbar .navbarlinks a:hover {
+    text-decoration: underline;
+  }
+  .container .ho {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0 2rem 0;
+  }
+  .container .ho .hoheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 8rem;
+  }
+  .container .ho .hoheader img {
+    position: absolute;
+    top: 14rem;
+    left: 10rem;
+  }
+  .container .ho .hoheader h1 {
+    text-align: center;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.7;
+    font-size: 8rem;
+    letter-spacing: -10px;
+  }
+  .container .ho .hoparagraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .container .ho .hoparagraph span {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .container .ho .hoparagraph p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 80%;
+    text-align: center;
+  }
+  .container .pro {
+    padding: 4rem 1rem;
+  }
+  .container .pro .proheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .pro .proheader span {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .container .pro .proheader h1 {
+    text-align: center;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.7;
+    font-size: 8rem;
+    letter-spacing: -10px;
+  }
+  .container .pro .proheader .recent {
+    padding-right: 10rem;
+  }
+  .container .pro .progrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .container .pro .progrid .probox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .container .pro .progrid .probox .proboxspan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .container .pro .progrid .probox .proboxspan h4 {
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .container .pro .progrid .probox .proboxspan i {
+    transform: rotate(-230deg);
+  }
+  .container .pro .progrid .probox .brand img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .pro .progrid .probox .propanelex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .pro .progrid .probox .propanelex h4 {
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .container .pro .progrid .probox .propanelex span {
+    font-weight: bold;
+  }
+  .container .pro .progrid .probox .propanelex .propanelexlink {
+    display: flex;
+    gap: 10px;
+  }
+  .container .pro .progrid .probox .propanelex .propanelexlink a {
+    padding: 10px;
+    color: black;
+    transition: 0.2s ease-in-out;
+  }
+  .container .pro .progrid .probox .propanelex .propanelexlink a:hover {
+    background-color: rgb(236, 236, 236);
+  }
+  .container .fo {
+    border-top: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .container .fo .fospan {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .container .fo .fospan p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .container .fo .foheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .fo .foheader h1 {
+    text-align: center;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.7;
+    font-size: 8rem;
+    letter-spacing: -10px;
+  }
+  .container .fo .foheader .foheaderpanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .container .fo .foheader .foheaderpanel h1 {
+    line-height: 0.8;
+  }
+  .container .fo .foheader .foheaderpanel p {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .container .fo .foheader .foheaderpanel p a {
+    color: black;
+    padding: 3px 5px;
+    transition: 0.2s ease-in-out;
+    border-radius: 2px;
+  }
+  .container .fo .foheader .foheaderpanel p a:hover {
+    background-color: rgb(236, 236, 236);
+  }
+  .container .fo .fotable {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 3rem;
+  }
+  .container .fo .fotable .foleft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .container .fo .fotable .foleft h2 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .container .fo .fotable .foleft .foleftlink {
+    display: flex;
+    gap: 10px;
+  }
+  .container .fo .fotable .foleft .foleftlink a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .container .fo .fotable .foleft .foleftlink a:hover {
+    text-decoration: underline;
+  }
+  .container .fo .fotable .foright p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 660px) {
+  .container .nav {
+    position: fixed;
+    width: 100%;
+    z-index: 888;
+    left: 0;
+    top: 0;
+    padding: 10px 1rem;
+  }
+  .container .nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .nav .navbar .navbarlogo h1 {
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .container .nav .navbar .navbarlinks {
+    display: flex;
+    gap: 10px;
+  }
+  .container .nav .navbar .navbarlinks a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  .container .nav .navbar .navbarlinks a:hover {
+    text-decoration: underline;
+  }
+  .container .ho {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0 2rem 0;
+  }
+  .container .ho .hoheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+  }
+  .container .ho .hoheader img {
+    position: absolute;
+    top: 0;
+    width: 5rem;
+    left: 0;
+  }
+  .container .ho .hoheader h1 {
+    text-align: center;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.8;
+    font-size: 4rem;
+    letter-spacing: -5px;
+  }
+  .container .ho .hoparagraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .container .ho .hoparagraph span {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .container .ho .hoparagraph p {
+    font-size: 13px;
+    font-weight: 200;
+    width: 80%;
+    text-align: center;
+  }
+  .container .pro {
+    padding: 4rem 1rem;
+  }
+  .container .pro .proheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .pro .proheader span {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .container .pro .proheader h1 {
+    text-align: center;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.8;
+    font-size: 4rem;
+    letter-spacing: -5px;
+  }
+  .container .pro .proheader .recent {
+    padding-right: 5rem;
+  }
+  .container .pro .progrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .container .pro .progrid .probox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .container .pro .progrid .probox .proboxspan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .container .pro .progrid .probox .proboxspan h4 {
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .container .pro .progrid .probox .proboxspan i {
+    transform: rotate(-230deg);
+  }
+  .container .pro .progrid .probox .brand img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .pro .progrid .probox .propanelex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .pro .progrid .probox .propanelex h4 {
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .container .pro .progrid .probox .propanelex span {
+    font-weight: bold;
+  }
+  .container .pro .progrid .probox .propanelex .propanelexlink {
+    display: flex;
+    gap: 10px;
+  }
+  .container .pro .progrid .probox .propanelex .propanelexlink a {
+    padding: 10px;
+    color: black;
+    transition: 0.2s ease-in-out;
+  }
+  .container .pro .progrid .probox .propanelex .propanelexlink a:hover {
+    background-color: rgb(236, 236, 236);
+  }
+  .container .fo {
+    border-top: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .container .fo .fospan {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .container .fo .fospan p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .container .fo .foheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .fo .foheader h1 {
+    text-align: center;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.8;
+    font-size: 4rem;
+    letter-spacing: -5px;
+  }
+  .container .fo .foheader .foheaderpanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .container .fo .foheader .foheaderpanel h1 {
+    line-height: 0.8;
+  }
+  .container .fo .foheader .foheaderpanel p {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .container .fo .foheader .foheaderpanel p a {
+    color: black;
+    padding: 3px 5px;
+    transition: 0.2s ease-in-out;
+    border-radius: 2px;
+  }
+  .container .fo .foheader .foheaderpanel p a:hover {
+    background-color: rgb(236, 236, 236);
+  }
+  .container .fo .fotable {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+  .container .fo .fotable .foleft {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .container .fo .fotable .foleft h2 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .container .fo .fotable .foleft .foleftlink {
+    display: flex;
+    gap: 10px;
+  }
+  .container .fo .fotable .foleft .foleftlink a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .container .fo .fotable .foleft .foleftlink a:hover {
+    text-decoration: underline;
+  }
+  .container .fo .fotable .foright p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+}/*# sourceMappingURL=global.css.map */

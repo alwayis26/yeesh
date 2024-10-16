@@ -1,0 +1,39 @@
+@mixin dekstopheader(){
+    text-align: center;
+    font-family: $chivoFont;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.7;
+    font-size: 12rem;
+    letter-spacing: -25px;
+}
+@mixin tabletheader(){
+    text-align: center;
+    font-family: $chivoFont;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.7;
+    font-size: 8rem;
+    letter-spacing: -10px;
+}
+@mixin mobileheader(){
+    text-align: center;
+    font-family: $chivoFont;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.8;
+    font-size: 4rem;
+    letter-spacing: -5px;
+}
+
+$dekstopspan: 15px;
+$tabletspan: 13px;
+$mobilespan: 9px;
+
+$dekstopheader: 0;
+$tabletheader: 0;
+$mobileheader: 0;
+
+$dekstopparagraph: 0;
+$tabletparagraph: 0;
+$mobileparagraph: 0;
